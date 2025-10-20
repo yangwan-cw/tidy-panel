@@ -1,0 +1,78 @@
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+
+}
+/* 图标按钮 */
+.info-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.info-logo:hover {
+  color: #1677ff; /* 悬停时变色 */
+  transform: scale(1.1);
+}
+
+/* 搜索输入框 */
+.search-input {
+  flex: 1;
+  height: 35px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 25px;
+  background-color: transparent;
+}
+
+/* 搜索结果容器 */
+.search-container {
+  margin-top: 20px;
+}
+
+/* 搜索结果列表 */
+.search-result-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;  /* 间距 */
+}
+
+.search-result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;  /* 每个搜索结果的宽度 */
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.result-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.result-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* 保持图像比例 */
+}
+
+.result-name {
+  font-size: 14px;
+  color: #333;
+}
